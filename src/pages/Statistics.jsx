@@ -5,9 +5,11 @@ import Title from "../components/Title";
 
 const Statistics = () => {
   const recipies = useLoaderData();
+  const MyKitchen = JSON.parse(localStorage.getItem("kitchen-room")) || [];
+
   const data = [
-    { name: "All Recipes", value: 400 },
-    { name: "My kitchens recipe", value: 300 },
+    { name: "All Recipes", value: recipies.length },
+    { name: "My kitchens recipe", value: MyKitchen.length },
   ];
 
   const COLORS = ["#FA490B", "#3AD166"];
