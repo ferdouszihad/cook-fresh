@@ -8,7 +8,7 @@ const Statistics = () => {
   const MyKitchen = JSON.parse(localStorage.getItem("kitchen-room")) || [];
 
   const data = [
-    { name: "All Recipes", value: recipies.length },
+    { name: "All Recipes", value: recipies.length - MyKitchen.length },
     { name: "My kitchens recipe", value: MyKitchen.length },
   ];
 
