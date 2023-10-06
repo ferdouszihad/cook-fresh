@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import Title from "../components/Title";
 import { BsBookmarkHeart } from "react-icons/bs";
 import { toast } from "react-toastify";
+import ErrorPage from "./ErrorPage";
 
 const RecipieDetail = () => {
   const { id } = useParams();
@@ -109,7 +110,7 @@ const RecipieDetail = () => {
       </>
     );
   } else {
-    return <h2>Not Found</h2>;
+    return <ErrorPage></ErrorPage>;
   }
 
   console.log(singleRecipie);
