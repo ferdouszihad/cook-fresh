@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* hero library */
+.content-box{
+    @apply w-11/12 mx-auto py-10;
+}
+a.active{
+    @apply text-blue-600 font-bold;
+}
+a:hover{
+    @apply text-blue-600;
+
+}
